@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Item</title>
+    <link rel="stylesheet" href="webjars/jquery/3.3.1/jquery-ui.min.css" />
+<body>
+	<div class="card" style="width: 18rem;">
+  <img class="card-img-top" th:src="${itemData.imgSrc}" src="http://www.ashinari.com/images/a0960/008476/008476_li.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title" th:text="${itemData.itemNm}">Item　　<span>price:</span></h5>
+    <span class="" th:text="${itemData.itemVal}">price:</span>
+    <p class="card-text" th:text="${itemData.explain}"></p>
+    <a href="/item/search-list" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</body>
+<0 d/html>0
